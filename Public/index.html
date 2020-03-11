@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resistration</title>
+    <link href="style.css" rel="stylesheet" type='text/css' media="all" />
+
+
+</head>
+
+<body>
+
+    <br>
+
+    <img src="./images/title.png " class="w3layouts" />
+    <br>
+    <div class="content-w3ls">
+        <div class="content1-agile">
+            <div class="form_w3layouts">
+
+                <form name="form1" action="/data" method="POST" class="agile_form">
+
+                    <div class="clear"></div>
+                    <div class="agileits-left">
+                        <input type="text" name="Name" placeholder="Firstname" required="">
+                    </div>
+
+                    <div class="clear"></div>
+                    <div class="agileits-left">
+                        <input type="text" name="Contact" placeholder="Phone number" required="">
+                    </div>
+
+
+                    <div class="clear"></div>
+                    <div class="agileits-left">
+                        <input type="email" name="Email" placeholder="example@email.com" required="">
+                    </div>
+
+
+
+
+                    <div class="clear"></div>
+                    <div class="agileits-left">
+                        <input type="text" name="Age" placeholder="age" required="">
+                    </div>
+
+                    <div class="clear"></div>
+                    <div class="section_class_agileits">
+                        <select name="Glasses" required="">
+                                <option value="">Glasses</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                
+                            </select>
+
+                    </div>
+
+                    <div class="clear"></div>
+                    <div class="section_class_agileits">
+                        <select name="Gender" required="">
+                                <option value="">Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="Other">Other</option>
+                             </select>
+
+                    </div>
+
+                    <div class="clear"></div>
+                    <div class="agileits-left check">
+                        <h2>pick Your Avatar</h2>
+                        <label><input  type="radio" name="avatar" value="Iorn Man" required=""> Iorn Man</label>
+                        <label><input  type="radio" name="avatar" value="Thor" required=""> Thor</label>
+                        <label><input  type="radio" name="avatar" value="Capton Marval" required=""> Capton Marval</label>
+                        <label><input  type="radio" name="avatar" value="Wonder Woman" required=""> Wonder Woman</label>
+
+                    </div>
+
+
+                    <div class="clear"></div>
+
+                    <div class="submit">
+                        <center> <input type="submit" onclick="myFunction()" value="submit"></center>
+                    </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+
+            var empt = document.forms["form1"]["Name"].value;
+            var empt0 = document.forms["form1"]["Email"].value;
+            var empt1 = document.forms["form1"]["Contact"].value;
+            var empt2 = document.forms["form1"]["Age"].value;
+            var empt3 = document.forms["form1"]["Glasses"].value;
+            var empt4 = document.forms["form1"]["Gender"].value;
+            var empt5 = document.forms["form1"]["avatar"].value;
+            if (empt == "" || empt0 == "" || empt1 == "" || empt2 == "" || empt3 == "" || empt4 == "" || empt5 == "") {
+                // prompts("Please input a Value");
+                return false;
+            } else {
+                alert("Thanks For Registration!");
+                return true;
+            }
+
+        }
+    </script>
+
+
+
+    </form>
+
+
+
+</body>
+
+</html>
